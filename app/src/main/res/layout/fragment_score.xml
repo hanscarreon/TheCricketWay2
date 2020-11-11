@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.score.ScoreFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.cardview.widget.CardView
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlack"
+                    android:fontFamily="@font/nunito_bold"
+                    android:text="Ways to score"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nonito_reg"
+                    android:textAlignment="center"
+                    android:text="A NO BALL - can be pronounced for some reasons: If the bowler bowls the ball from some unacceptable spot, the ball is announced hazardous (regularly happens when bowled at the batsmen's body on the full), skips more than twice or moves prior to arriving at the batsman or if defenders are remaining in unlawful positions. The batsman can hit a no ball and score runs off it yet can't be out from a no ball with the exception of in the event that they are ran out, hit the ball twice, handle the ball or deter the field. The batsman increases any runs scored off the no ball for his shot while the group additionally increases one run for the no ball itself. "/>
+                <TextView
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nonito_reg"
+                    android:textAlignment="center"
+                    android:text="A Wide Ball - will be proclaimed if the umpire figures the batsman didn't have a sensible occasion to score off the conveyance. Be that as it may if the conveyance is dumbfounded the batsmen's head it won't be announced a wide however a no ball. Umpires are a lot stricter on wide conveyances in the more limited arrangement of the game while being considerably more loose in test cricket. A wide conveyance will add one rush to the batting group and any runs scored by the batsman. The batsman can't get out off a wide conveyance aside from on the off chance that they are puzzled, run out, handle the ball, hit their wicket or discourage the field. "/>
+
+                <TextView
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nonito_reg"
+                    android:textAlignment="center"
+                    android:text="A Bye - is the place where a ball that is definitely not a no ball or wide passes the striking batsman and runs are scored without the batsman hitting the ball."/>
+
+                <TextView
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nonito_reg"
+                    android:textAlignment="center"
+                    android:text="A Leg Bye - is the place where runs are scored by hitting the batsman, however not the bat and the ball is anything but a no ball or wide. Anyway no runs can be scored if the striking batsman didn't endeavor to play a shot or on the off chance that he was keeping away from the ball."/>
+
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

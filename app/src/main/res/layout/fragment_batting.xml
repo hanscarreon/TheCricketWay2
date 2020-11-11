@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.batting.BattingFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlack"
+                    android:fontFamily="@font/nunito_bold"
+                    android:text="Batting"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nonito_reg"
+                    android:textAlignment="center"
+                    android:text="Bowled – Cricket decides express that if the ball is bowled and hits the striking batsman's wickets the batsman is given out (as long as in any event one bail is taken out by the ball). It doesn't make a difference whether the ball has contacted the batsman's bat, gloves, body or some other piece of the batsman. Anyway the ball isn't permitted to have contacted another player or umpire prior to hitting the wickets. "/>
+                <TextView
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nonito_reg"
+                    android:textAlignment="center"
+                    android:text="A Wide Ball - will be proclaimed if the umpire figures the batsman didn't have a sensible occasion to score off the conveyance. Be that as it may if the conveyance is dumbfounded the batsmen's head it won't be announced a wide however a no ball. Umpires are a lot stricter on wide conveyances in the more limited arrangement of the game while being considerably more loose in test cricket. A wide conveyance will add one rush to the batting group and any runs scored by the batsman. The batsman can't get out off a wide conveyance aside from on the off chance that they are puzzled, run out, handle the ball, hit their wicket or discourage the field. "/>
+
+                <TextView
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nonito_reg"
+                    android:textAlignment="center"
+                    android:text="Gotten – Cricket decides express that if a batsman hits the ball or contacts the ball at all with his bat or hand/glove holding the bat then the batsman can be gotten out. This is finished by the defenders, wicket attendant or bowler getting the ball on the full (before it skips). In the event that this is done, at that point cricket rules express the batsman is out."/>
+
+                <TextView
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nonito_reg"
+                    android:textAlignment="center"
+                    android:text="Leg Before Wicket (LBW) – If the ball is bowled and it hits the batsman first without the bat hitting it then a LBW choice is conceivable. Anyway for the umpire to give this out he should initially take a gander at a portion of the components expressed in the cricket rules. The main thing the umpire need to conclude is would the ball have hit the wickets if the batsman was not there. In the event that his response to this is yes and the ball was not pitched on the leg side of the wicket he can securely give the batsman out. Notwithstanding if the ball hits the batsman outside the line of off stump while he was endeavoring to play a stroke then he isn't out. "/>
+
+                <TextView
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nonito_reg"
+                    android:textAlignment="center"
+                    android:text="Befuddled – A batsman can be given out as per cricket rules when the wicketkeeper puts down his wicket while he is out of his wrinkle and not endeavoring a run (in the event that he is endeavoring a run it would be a runout)."/>
+
+                <TextView
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nonito_reg"
+                    android:textAlignment="center"
+                    android:text="Run Out – Cricket decides express that a batsman is out if no piece of his bat or body is grounded behind the popping wrinkle while the ball is in play and the wicket is decently put somewhere near the handling side."/>
+
+
+                <TextView
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nonito_reg"
+                    android:textAlignment="center"
+                    android:text="Hit Wicket – Cricket decides indicate that if a batsman hits his wicket down with his bat or body after the bowler has entered his conveyance stried and the ball is in play then he is out. The striking batsman is likewise out on the off chance that he hits his wicket down while embarking for his previously run."/>
+
+
+                <TextView
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nonito_reg"
+                    android:textAlignment="center"
+                    android:text="Taken care of The Ball – Cricket rules permit the batsman to be given out in the event that he readily handles the ball with the hand that isn't contacting the bat without the assent of the resistance."/>
+
+
+                <TextView
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nonito_reg"
+                    android:textAlignment="center"
+                    android:text="Planned Out – An approaching batsman must be prepared to confront a ball or be at the non strikers end with his accomplice inside three minutes of the active batsman being excused. On the off chance that this isn't done the approaching batsman can be given out. "/>
+
+                <TextView
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nonito_reg"
+                    android:textAlignment="center"
+                    android:text="Hit The Ball Twice – Cricket decides express that if a batsman hits a ball twice other than to shield his wicket or with assent from the resistance he is out."/>
+
+                <TextView
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nonito_reg"
+                    android:textAlignment="center"
+                    android:text="Deterring The Field – A batsman is out on the off chance that he enthusiastically impedes the resistance by word or activity."/>
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

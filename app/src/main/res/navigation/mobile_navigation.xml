@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.hcac.thecricketway.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.hcac.thecricketway.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.hcac.thecricketway.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/nav_teams"
+        android:name="com.hcac.thecricketway.ui.teams.TeamsFragment"
+        android:label="@string/menu_teams"
+        tools:layout="@layout/fragment_teams" />
+    <fragment
+        android:id="@+id/nav_leagues"
+        android:name="com.hcac.thecricketway.ui.leagues.LeaguesFragment"
+        android:label="@string/menu_leagues"
+        tools:layout="@layout/fragment_leagues" />
+    <fragment
+        android:id="@+id/nav_series"
+        android:name="com.hcac.thecricketway.ui.series.SeriesFragment"
+        android:label="@string/menu_series"
+        tools:layout="@layout/fragment_series" />
+    <fragment
+        android:id="@+id/nav_rules"
+        android:name="com.hcac.thecricketway.ui.rules.RulesFragment"
+        android:label="@string/menu_rules"
+        tools:layout="@layout/fragment_rules" />
+    <fragment
+        android:id="@+id/nav_structure"
+        android:name="com.hcac.thecricketway.ui.structure.StructureFragment"
+        android:label="@string/menu_structure"
+        tools:layout="@layout/fragment_structure" />
+    <fragment
+        android:id="@+id/nav_score"
+        android:name="com.hcac.thecricketway.ui.score.ScoreFragment"
+        android:label="@string/menu_score"
+        tools:layout="@layout/fragment_score" />
+    <fragment
+        android:id="@+id/nav_batting"
+        android:name="com.hcac.thecricketway.ui.batting.BattingFragment"
+        android:label="@string/menu_batting"
+        tools:layout="@layout/fragment_batting" />
+    <fragment
+        android:id="@+id/nav_throwing"
+        android:name="com.hcac.thecricketway.ui.throwing.ThrowingFragment"
+        android:label="@string/menu_throwing"
+        tools:layout="@layout/fragment_throwing" />
+</navigation>

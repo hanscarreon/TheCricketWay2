@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+       >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/main_card"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="This app will hellp you understand what is cricket and why cricket is fun!!!!" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="More" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@mipmap/ic_launcher" />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/cricket_way_bg"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:onClick="goRules"
+                    android:src="@drawable/rules"
+                    tools:ignore="OnClick" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginBottom="15dp"
+                    android:fontFamily="@font/nunito_bold"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorWhite"
+                    android:onClick="goRules"
+                    android:text="Rules"
+                    tools:ignore="OnClick" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/cricket_way_bg"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/struc"
+                    android:onClick="goStructure"
+                    android:layout_height="100dp"
+                    tools:ignore="OnClick" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:onClick="goStructure"
+                    android:layout_marginBottom="15dp"
+                    android:fontFamily="@font/nunito_bold"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="15sp"
+                    android:text="Structure"
+                    tools:ignore="OnClick" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/cricket_way_bg"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:src="@drawable/score"
+                    android:layout_marginTop="10dp"
+                    android:onClick="goScore"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    tools:ignore="OnClick" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:onClick="goScore"
+                    android:layout_marginBottom="15dp"
+                    android:fontFamily="@font/nunito_bold"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorWhite"
+                    android:text="score"
+                    tools:ignore="OnClick" />
+            </LinearLayout>
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/cricket_way_bg"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:src="@drawable/batting"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:onClick="goBatting"
+                    android:layout_height="100dp"
+                    tools:ignore="OnClick" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:onClick="goBatting"
+                    android:layout_marginBottom="15dp"
+                    android:fontFamily="@font/nunito_bold"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorWhite"
+                    android:text="Batting"
+                    tools:ignore="OnClick" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/cricket_way_bg"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:src="@drawable/drills"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginBottom="15dp"
+                    android:fontFamily="@font/nunito_bold"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorWhite"
+                    android:text="Drills" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/cricket_way_bg"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:src="@drawable/throwing"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:onClick="goThrowing"
+                    android:layout_height="100dp"
+                    tools:ignore="OnClick" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:onClick="goThrowing"
+                    android:layout_marginBottom="15dp"
+                    android:fontFamily="@font/nunito_bold"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorWhite"
+                    android:text="Throwing"
+                    tools:ignore="OnClick" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:id="@+id/leagues"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:orientation="vertical"
+                android:background="@drawable/main_card"
+                android:onClick="goLeagues"
+                tools:ignore="OnClick">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:fontFamily="@font/nunito_bold"
+                    android:textSize="15sp"
+                    android:onClick="goLeagues"
+                    android:text="Leagues"/>
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_gravity="center"
+                    android:layout_height="100dp"
+                    android:src="@mipmap/ic_launcher"
+                    android:layout_margin="5dp"
+                    android:onClick="goLeagues"
+
+                    />
+
+            </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_margin="2dp"
+                android:background="@drawable/card_blue"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:fontFamily="@font/nunito_bold"
+                    android:textSize="15sp"
+                    android:onClick="goTeams"
+                    android:text="Teams"
+                    tools:ignore="OnClick" />
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:src="@drawable/ulo"
+                    android:onClick="goTeams"
+                    tools:ignore="OnClick" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_margin="2dp"
+                android:background="@drawable/card_green"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:fontFamily="@font/nunito_bold"
+                    android:textSize="13sp"
+                    android:onClick="goMatches"
+                    android:text="Matches"
+                    tools:ignore="OnClick" />
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:src="@drawable/ulo"
+                    android:onClick="goMatches"
+                    tools:ignore="OnClick" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
