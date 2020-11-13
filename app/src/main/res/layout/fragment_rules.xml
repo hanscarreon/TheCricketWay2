@@ -7,24 +7,31 @@
     tools:context=".ui.rules.RulesFragment">
 
     <!-- TODO: Update blank fragment layout -->
-   <androidx.cardview.widget.CardView
-       android:layout_margin="10dp"
-       app:cardCornerRadius="10dp"
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content">
-
-       <LinearLayout
-           android:orientation="vertical"
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Rules"
+            android:textSize="30sp"
+            android:gravity="center"
+            />
+        <View
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/black" />
+       <androidx.cardview.widget.CardView
+           android:layout_margin="10dp"
+           app:cardCornerRadius="10dp"
            android:layout_width="match_parent"
            android:layout_height="wrap_content">
-           <TextView
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:textColor="@color/colorBlack"
-               android:fontFamily="@font/nunito_bold"
-               android:text="Rules"
-               android:gravity="center"
-               />
+
 
            <TextView
                android:layout_margin="10dp"
@@ -33,30 +40,51 @@
                android:fontFamily="@font/nonito_reg"
                android:textAlignment="center"
                android:text="Cricket is a game played between two teams made up of eleven players each. There is also a standby player called a “twelfth man ” who is used should a player be injured during play."/>
-           <TextView
-               android:layout_margin="10dp"
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:fontFamily="@font/nonito_reg"
-               android:textAlignment="center"
-               android:text="The twelfth man is not permitted to pitch, bat, hold the wicket or captain the team. His sole responsibility is to act as a backup fielder. "/>
-           <TextView
-               android:layout_margin="10dp"
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:fontFamily="@font/nonito_reg"
-               android:textAlignment="center"
-               android:text="As soon as they have recovered from their injury, the original player is able to return to the game."/>
-           <TextView
-               android:layout_margin="10dp"
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:fontFamily="@font/nonito_reg"
-               android:textAlignment="center"
-               android:text="To enforce the law and ensure that the laws of cricket are maintained in the game."/>
-       </LinearLayout>
 
+    </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="10dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nonito_reg"
+                android:textAlignment="textStart"
+                android:textSize="15sp"
+                android:text="The twelfth man is not permitted to pitch, bat, hold the wicket or captain the team. His sole responsibility is to act as a backup fielder. "/>
 
-   </androidx.cardview.widget.CardView>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="10dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nonito_reg"
+                android:textAlignment="textStart"
+                android:textSize="15sp"
+                android:text="As soon as they have recovered from their injury, the original player is able to return to the game."/>
 
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_margin="10dp"
+            app:cardCornerRadius="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nonito_reg"
+                android:textAlignment="textStart"
+                android:textSize="15sp"
+                android:text="To enforce the law and ensure that the laws of cricket are maintained in the game."/>
+        </androidx.cardview.widget.CardView>
+</LinearLayout>
 </FrameLayout>

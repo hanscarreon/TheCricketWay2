@@ -6,57 +6,45 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_home"
-            android:icon="@drawable/ic_baseline_home_24"
             android:title="@string/menu_home" />
 
-        <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="@string/menu_gallery" />
+<!--        <item-->
+<!--            android:id="@+id/nav_gallery"-->
+<!--            android:icon="@drawable/ic_menu_gallery"-->
+<!--            android:title="@string/menu_gallery" />-->
 
         <item
             android:id="@+id/nav_rules"
-            android:icon="@drawable/ic_menu_slideshow"
             android:title="@string/menu_rules" />
 
-        <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/menu_slideshow" />
-
-        <item
-            android:id="@+id/nav_teams"
-            android:icon="@drawable/ic_baseline_flag_24"
-            android:title="@string/menu_teams" />
-
-        <item
-            android:id="@+id/nav_leagues"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="@string/menu_leagues" />
-
-        <item
-            android:id="@+id/nav_series"
-            android:icon="@drawable/ic_baseline_sports_handball_24"
-            android:title="@string/menu_series" />
+<!--        <item-->
+<!--            android:id="@+id/nav_slideshow"-->
+<!--            android:icon="@drawable/ic_menu_slideshow"-->
+<!--            android:title="@string/menu_slideshow" />-->
 
         <item
             android:id="@+id/nav_structure"
-            android:icon="@drawable/ic_baseline_sports_handball_24"
             android:title="@string/menu_structure" />
-
         <item
             android:id="@+id/nav_score"
-            android:icon="@drawable/ic_baseline_sports_handball_24"
             android:title="@string/menu_score" />
-
         <item
             android:id="@+id/nav_batting"
-            android:icon="@drawable/ic_baseline_sports_handball_24"
             android:title="@string/menu_batting" />
-
+        <item
+            android:id="@+id/nav_drills"
+            android:title="@string/menu_drills" />
         <item
             android:id="@+id/nav_throwing"
-            android:icon="@drawable/ic_baseline_sports_handball_24"
             android:title="@string/menu_throwing" />
+        <item
+            android:id="@+id/nav_leagues"
+            android:title="@string/menu_leagues" />
+        <item
+            android:id="@+id/nav_teams"
+            android:title="@string/menu_teams" />
+        <item
+            android:id="@+id/nav_series"
+            android:title="@string/menu_series" />
     </group>
 </menu>

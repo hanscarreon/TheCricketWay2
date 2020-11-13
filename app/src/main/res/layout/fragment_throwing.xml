@@ -3,29 +3,41 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.throwing.ThrowingFragment">
-
-    <androidx.cardview.widget.CardView
-        android:layout_margin="10dp"
-        app:cardCornerRadius="10dp"
+    <androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <androidx.core.widget.NestedScrollView
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Throwing Tips"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textSize="30sp"
+            />
+        <View
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/black" />
+        <androidx.cardview.widget.CardView
+            android:layout_margin="10dp"
+            app:cardCornerRadius="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
             <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/colorBlack"
-                    android:fontFamily="@font/nunito_bold"
-                    android:text="Throwing Tips"
-                    android:layout_marginTop="10dp"
-                    android:gravity="center"
-                    />
 
                 <TextView
                     android:layout_margin="10dp"
@@ -33,11 +45,94 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/nonito_reg"
                     android:textAlignment="center"
-                    android:text="the nonappearance of broad or explicit tossing ability, mentors can assist competitors with building up their capacity to toss in the event that they comprehend fundamental learning hypothesis and reformist over-burden. As we as a whole know, competitors learn through the accompanying: o Hearing a clarification of an aptitude/movement o Seeing an exhibition of an expertise/movement \n o Being allowed a chance to rehearse Competitors are currently entering cricket programs with lower levels of actual capability than they ever have previously, so even without definite clarifications, or extravagant tossing drills, competitors will improve their tossing whenever offered occasions to rehearse. Utilizing a result based learning approach (eg. continuously attempt to hit a little objective) and giving criticism on their outcomes is more than satisfactory. \n Tossing notwithstanding, can be extremely distressing on the body, so doing an excessive amount of too early can cause injury. Presenting moderate measures of tossing, and afterward expanding this (both volume and force) after some time will build up the development effectiveness, expanding both force creation and injury opposition just as the degree of ability of the competitor. \n To improve the tossing of their competitors, mentors must: \n o Provide competitors occasions to toss, and \n o Use reformist over-burden to expand their volume and force after some time"/>
-
+                    android:id="@+id/throwing_tips"
+                    android:textSize="15dp"
+                    android:text=""/>
             </LinearLayout>
-        </androidx.core.widget.NestedScrollView>
+        </androidx.cardview.widget.CardView>
 
-    </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_margin="10dp"
+            app:cardCornerRadius="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nonito_reg"
+                    android:textAlignment="textStart"
+                    android:textSize="15dp"
+                    android:id="@+id/throwing_tips1"
+                    android:text=""/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_margin="10dp"
+            app:cardCornerRadius="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nonito_reg"
+                    android:textAlignment="textStart"
+                    android:id="@+id/throwing_tips2"
+                    android:textSize="15dp"
+                    android:text=""/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_margin="10dp"
+            app:cardCornerRadius="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nonito_reg"
+                    android:textAlignment="textStart"
+                    android:id="@+id/throwing_tips3"
+                    android:textSize="15dp"
+                    android:text=""/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_margin="10dp"
+            app:cardCornerRadius="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nonito_reg"
+                    android:textAlignment="textStart"
+                    android:id="@+id/throwing_tips4"
+                    android:textSize="15dp"
+                    android:text=""/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
+
 
 </FrameLayout>

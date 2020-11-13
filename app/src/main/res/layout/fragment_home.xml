@@ -35,14 +35,16 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="5dp"
+                    android:layout_margin="10dp"
                     android:text="This app will hellp you understand what is cricket and why cricket is fun!!!!" />
 
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="5dp"
-                    android:text="More" />
+                    android:layout_margin="10dp"
+                    android:onClick="goStructure"
+                    android:text="More"
+                    tools:ignore="OnClick" />
 
             </LinearLayout>
 
@@ -50,7 +52,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:src="@mipmap/ic_launcher" />
+                android:src="@drawable/tao" />
 
         </LinearLayout>
 
@@ -194,7 +196,9 @@
                     android:src="@drawable/drills"
                     android:layout_marginTop="10dp"
                     android:layout_width="match_parent"
-                    android:layout_height="100dp" />
+                    android:onClick="goDrills"
+                    android:layout_height="100dp"
+                    tools:ignore="OnClick" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -204,7 +208,9 @@
                     android:fontFamily="@font/nunito_bold"
                     android:textSize="15sp"
                     android:textColor="@color/colorWhite"
-                    android:text="Drills" />
+                    android:onClick="goDrills"
+                    android:text="Drills"
+                    tools:ignore="OnClick" />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="0dp"
@@ -264,7 +270,7 @@
                     android:layout_width="100dp"
                     android:layout_gravity="center"
                     android:layout_height="100dp"
-                    android:src="@mipmap/ic_launcher"
+                    android:src="@drawable/trophy"
                     android:layout_margin="5dp"
                     android:onClick="goLeagues"
 
@@ -301,7 +307,7 @@
                     android:layout_weight="2"
                     android:layout_height="match_parent"
                     android:layout_gravity="right"
-                    android:src="@drawable/ulo"
+                    android:src="@drawable/teams"
                     android:onClick="goTeams"
                     tools:ignore="OnClick" />
             </LinearLayout>
@@ -327,7 +333,7 @@
                     android:layout_weight="2"
                     android:layout_height="match_parent"
                     android:layout_gravity="right"
-                    android:src="@drawable/ulo"
+                    android:src="@drawable/matches"
                     android:onClick="goMatches"
                     tools:ignore="OnClick" />
             </LinearLayout>

@@ -1,5 +1,6 @@
 package com.hcac.thecricketway;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -23,12 +24,14 @@ public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
 
+    @SuppressLint("ResourceAsColor")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        toolbar.setTitleTextColor(R.color.colorBlack);
 //        FloatingActionButton fab = findViewById(R.id.fab);
 //        fab.setOnClickListener(new View.OnClickListener() {
 //            @Override
@@ -43,8 +46,8 @@ public class MainActivity extends AppCompatActivity {
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.nav_home,
-                R.id.nav_gallery,
-                R.id.nav_slideshow,
+//                R.id.nav_gallery,
+//                R.id.nav_slideshow,
                 R.id.nav_teams,
                 R.id.nav_leagues,
                 R.id.nav_rules,
@@ -52,7 +55,8 @@ public class MainActivity extends AppCompatActivity {
                 R.id.nav_score,
                 R.id.nav_score,
                 R.id.nav_batting,
-                R.id.nav_throwing)
+                R.id.nav_throwing,
+                R.id.nav_drills)
                 .setDrawerLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
@@ -107,8 +111,17 @@ public class MainActivity extends AppCompatActivity {
         View button = findViewById(R.id.nav_batting);
         button.performClick();
     }
+
+    public void goDrills(View view) {
+        View button = findViewById(R.id.nav_drills);
+        button.performClick();
+    }
+
     public void goThrowing(View view) {
         View button = findViewById(R.id.nav_throwing);
         button.performClick();
     }
+
+
+
 }

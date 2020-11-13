@@ -6,46 +6,55 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.structure.StructureFragment">
 
-    <androidx.cardview.widget.CardView
-        android:layout_margin="10dp"
-        app:cardCornerRadius="10dp"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <androidx.core.widget.NestedScrollView
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-                <LinearLayout
-                    android:orientation="vertical"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-                    <TextView
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Game Structure"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textSize="30sp"
+            />
+        <View
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/black" />
+        <androidx.cardview.widget.CardView
+            android:layout_margin="10dp"
+            app:cardCornerRadius="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                    <LinearLayout
+                        android:orientation="vertical"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textColor="@color/colorBlack"
-                        android:fontFamily="@font/nunito_bold"
-                        android:text="Game Structure"
-                        android:layout_marginTop="10dp"
-                        android:gravity="center"
-                        />
-
-                    <TextView
-                        android:layout_margin="10dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/nonito_reg"
-                        android:textAlignment="center"
-                        android:text="Test cricket is a game that ranges more than two innings. This implies that one group needs to bowl the other group out twice and score more runs then them to dominate the game. Another critical distinction between test cricket and different types of cricket is the length of the innings. In test cricket there is no restriction to the innings length. While in one day cricket and Twenty20 cricket there are a sure measure of overs per innings. As far as possible in test cricket is a multi day length. Before the game starts an official will flip a coin. The commander who surmises the right half of the coin will at that point pick on the off chance that they need to bat or handle first. One group will at that point bat while the other will bowl and field. The point of the batting group is to score runs while the point of the handling group is to bowl ten individuals out and close the batting groups' innings. Despite the fact that there are eleven individuals in each group just ten individuals should be bowled out as you can't have one individual batting alone. Batting is done two by two."/>
-                    <TextView
-                        android:layout_margin="10dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/nonito_reg"
-                        android:textAlignment="center"
-                        android:text="When the primary group has been bowled out the subsequent group would then go into bat. When the subsequent group is then bowled out it would ordinarily re-visitation of the principal group batting once more. Anyway there is an exemption for this in the cricket rules, it is known as the follow-on. The follow-on is the point at which the main group makes at any rate 200 runs more than the subsequent group made (in a multi day test coordinate). This at that point gives the main group the alternative to make the subsequent group bat once more. This is especially valuable if the game is advancing gradually or influenced by awful climate and there probably won't be sufficient time for the two groups to play a full innings. Should this be the case the batting group's commander additionally has the privilege to relinquish their innings whenever. This is known as a statement. Some may ask why a commander would relinquish the open door for his group to bat. Be that as it may if the game is approaching a nearby and it would appear that they won't have the option to bowl the other group out again this could be an alternative. In the event that one group isn't bowled out twice and a champ decided in the five days of play the game is proclaimed a draw. Consequently it very well might merit announcing an innings to make the chance of a success instead of a draw."/>
-
-                </LinearLayout>
-        </androidx.core.widget.NestedScrollView>
-
-    </androidx.cardview.widget.CardView>
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_margin="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/nonito_reg"
+                            android:textAlignment="center"
+                            android:text="Test cricket is a game that ranges more than two innings. This implies that one group needs to bowl the other group out twice and score more runs then them to dominate the game. Another critical distinction between test cricket and different types of cricket is the length of the innings. In test cricket there is no restriction to the innings length. While in one day cricket and Twenty20 cricket there are a sure measure of overs per innings. As far as possible in test cricket is a multi day length. Before the game starts an official will flip a coin. The commander who surmises the right half of the coin will at that point pick on the off chance that they need to bat or handle first. One group will at that point bat while the other will bowl and field. The point of the batting group is to score runs while the point of the handling group is to bowl ten individuals out and close the batting groups' innings. Despite the fact that there are eleven individuals in each group just ten individuals should be bowled out as you can't have one individual batting alone. Batting is done two by two."/>
+                        <TextView
+                            android:layout_margin="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/nonito_reg"
+                            android:textAlignment="center"
+                            android:text="When the primary group has been bowled out the subsequent group would then go into bat. When the subsequent group is then bowled out it would ordinarily re-visitation of the principal group batting once more. Anyway there is an exemption for this in the cricket rules, it is known as the follow-on. The follow-on is the point at which the main group makes at any rate 200 runs more than the subsequent group made (in a multi day test coordinate). This at that point gives the main group the alternative to make the subsequent group bat once more. This is especially valuable if the game is advancing gradually or influenced by awful climate and there probably won't be sufficient time for the two groups to play a full innings. Should this be the case the batting group's commander additionally has the privilege to relinquish their innings whenever. This is known as a statement. Some may ask why a commander would relinquish the open door for his group to bat. Be that as it may if the game is approaching a nearby and it would appear that they won't have the option to bowl the other group out again this could be an alternative. In the event that one group isn't bowled out twice and a champ decided in the five days of play the game is proclaimed a draw. Consequently it very well might merit announcing an innings to make the chance of a success instead of a draw."/>
+                    </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
 
 </FrameLayout>
